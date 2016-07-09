@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>一个简单的表单</title>
+    <body>
+      <form method="get" action="">
+        用户名：
+        <input type="text" name="usename" ><br />
+        编号：
+        <input type="text" name="number"><br />
+        密码：
+        <input type="password" name="password"><br />
+        班级：
+        <input type="text" name="class" readonly="readonly"value="黄金小二班"><br />
+        性别:
+        <input type="radio" name="sex" id="0" value="male" checked>male
+        <input type="radio" name="sex" id="1" value="femal">female<br />
+        对那些运动感兴趣：
+        <input type="checkbox" name="basketball">篮球
+        <input type="checkbox" name="run">跑步
+        <input type="checkbox" name="swimming">游泳
+        <input type="checkbox" name="footb">足球<br />
+        地区：
+        <select name="area">
+          <option value="福州">福州</option>
+          <option value="厦门">厦门</option>
+          <option value="泉州">泉州</option>
+          <option value="漳州">漳州</option>
+          <option value="莆田">莆田</option>
+        </select><br />
+        学费已缴:
+        <input type="checkbox" name="money"><br />
+        个人说明：
+        <textarea rows="3" cols="50"> </textarea><br />
+        <input type="submit" name="提交">
+        <input type="reset" name="重置">
+      </form>
+    </body>
+  </head>
+</html>
