@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>表单练习2</title>
+  </head>
+  <body>
+    <form method="get">
+    <table align="center" border="1" width="300" >
+      <thead>
+        <tr>
+          <th colspan="4">返回  客户信息  添加</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th colspan="4">
+            <input type="submit" value="保存结单信息">
+          </th>
+        </tr>
+      </tfoot>
+    <tbody>
+      <tr>
+        <th colspan="4">结单信息</th>
+      </tr>
+          <tr>
+            <td >车型 </td>
+            <td>
+              <select name="type">
+                <option value="豪华版">豪华版</option>
+                <option value="简约版">简约版</option>
+                <option value="舒适版">舒适版</option>
+                <option value="大众版">大众版</option>
+              </select><br />
+              <select name="no">
+                <option value="2.0T">2.0T</option>
+                <option value="1.0T">1.0T</option>
+                <option value="2.3T">2.3T</option>
+                <option value="1.2T">1.2T</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>车型号</td>
+            <td>
+              <input type="text" name="size" width="20">
+            </td>
+          </tr>
+          <tr>
+            <td>交易金额</td>
+            <td>
+              <input type="text" name="money1" width="20">万
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="2">优惠方式</td>
+            <td>
+              <select name="discount">
+                <option value="cash">现金</option>
+                <option value="credit">信用卡</option>
+                <option value="alipay">支付宝</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" name="money2" width="20">千
+            </td>
+          </tr>
+          <tr>
+            <td>颜色</td>
+            <td>
+              <select name="colour" >
+                <option value="black">黑色</option>
+                <option value="red">红色</option>
+                <option value="white">白色</option>
+                <option value="blue">蓝色</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>数量</td>
+            <td>
+              <input type="text" name="amount">
+            </td>
+          </tr>
+      </tbody>
+    </table>
+    </form>
+  </body>
+</html>
