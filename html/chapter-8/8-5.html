@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <title>表单练习5</title>
+  </head>
+  <body>
+    <h2>新用户注册</h2>
+    <p>个人资料：*为必填项</p>
+    <form>
+      <p>*姓名：
+      <input type="text" name="username" placeholder="请输入姓名"  required="required"></p>
+      <p>*手机号码：
+      <input type="text" name="number" placeholder="输入11位数的手机号码" required="required"></p>
+      <p>*设定密码：
+      <input type="password" name="pwd" placeholder="密码必须是6-11位" required="required"></p>
+      <p>*性别：
+      <input type="radio" name="sex" value="male" checked="checked">男
+      <input type="radio" name="sex" value="femal">女</p>
+      <p>*地址：
+      <select>
+        <option value="福州">福州</option>
+        <option value="泉州">泉州</option>
+        <option value="厦门">厦门</option>
+        <option value="漳州">漳州</option>
+        <option value="三明">三明</option>
+      </select> </p>
+      <p>邮政编码：
+      <input type="text" name="zip code">
+      <p>服务条款：
+      <textarea readonly="readonly" cols="40" rows="10">会员权责
+4.1　会员有权按照尚唐规定的程序和要求使用尚唐向会员提供的各项网络服务，如果会员对该服务有异议，可以与尚唐联系以便得到及时解决。
+4.2　用户在申请使用尚唐旗下网络服务时，必须向尚唐提供准确的个人资料，如个人资料有任何变动，必须及时更新。
+4.3　会员须同意接受尚唐旗下网络通过电子邮件或其他方式向会员发送促销或其他相关商业信息。
+4.4　会员在尚唐旗下网络的网页上发布信息或者利用尚唐网络的服务时必须符合国家的法律法规以及国际法的有关规定。
+4.5　对于会员通过尚唐旗下网络网上消息平台（包括但不限于BBS、评论）上传到尚唐旗下网络网站上可公开获取区域的任何内容，会员同意授予尚唐在全世界范围内享有完全的、免费的、永久性的、不可撤销的、非独家的权利，以及再许可第三方的权利，以使用、复制、修改、改编、出版、翻译、据以创作衍生作品、传播、表演和展示此等内容（整体或部分），和/或将此等内容编入当前已知的或以后开发的其他任何形式的作品、媒体或技术中。</textarea></p>
+      <input type="submit" value="我接受，创建我的用户">
+    </form>
+  </body>
+</html>
