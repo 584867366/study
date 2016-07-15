@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>客户信息列表</title>
+  </head>
+  <body>
+    <p>
+      <a href=""> 返回</a> <a href=""> 客户信息</a> <a href=""> 添加</a>
+    </p>
+    <p>
+      <a href="">基本信息</a> <a href="">进店信息</a> <a href="">结单信息</a>
+    </p>
+  <form>
+  <dl>
+    <dt>车型</dt>
+    <dd>  
+        <select name="style">
+          <option value="shenlinlang">森林狼</option>
+          <option value="huojian">火箭</option>
+          <option value="huren">湖人</option>
+        </select>  
+    </dd>
+    <dd> 
+        <select name="type">
+          <option value="2.0T">2.0T</option>
+          <option value="2.1T">2.1T</option>
+          <option value="2.2T">2.2T</option>
+        </select>  
+    </dd>
+    <dt>车架号</dt>
+    <dd>  
+        <input type="text" name="number"> 
+    </dd>
+    <dt>交易金额</dt>
+    <dd>  
+        <input type="text" name="money1" value="万">
+    </dd>
+    <dt>优惠情况</dt>
+    <dd>
+        <select name="way">
+          <option value="cash">现金</option>
+          <option value="vouche">抵用券</option>
+        </select>
+        <br />
+        <input type="text" name="money2" value="千">
+    </dd>
+    <dt>颜色</dt>
+      <dd>
+        <select name="colour">
+          <option value="black">黑色</option>
+          <option value="white">白色</option>
+          <option value="red">红色</option> 
+        </select>
+      </dd>
+    <input type="submit" value="创建结单信息" >
+  </dl>
+  </form>
+</html>
