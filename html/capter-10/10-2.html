@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>CSS派生选择器</title>
+    <style type="text/css">
+      li strong{/*派生选择器示例*/
+        font-style: italic;
+        font-size: normal;
+      }
+      h1 em{color: red;}/*后代选择器示例*/
+      h2 > em{color: blue}/*子选择器示例*/
+      h3 + strong{color: yellow}/*相邻兄弟选择器示例*/
+    </style>
+  </head>
+  <body>
+    <section>
+      <p><strong>我是粗体字，不是斜体字，因为我不在列表中，所以这个规则对我不起作用</strong></p>
+      <ul>
+        <li><strong>我是斜体字，因为strong元素位于li元素内</strong></li>
+        <li>我是正常的字体</li>
+      </ul>
+    </section>
+    <section>
+      <h1>this is a <em>important</em>heading</h1>
+    </section>
+    <section>
+      <h2>this is <em>this will be styled</em> important</h2>
+      <h2>this is <strong>really <em>this will not be styled </strong></em>important</h2>
+    </section>
+    <section>
+      <h3>this is a heading</h3>
+      <strong>this will be styled</strong>
+      <strong>this will no be styled</strong>
+    </section>
+  </body>
+</html>
