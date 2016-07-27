@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>border-collapse特性</title>
+    <style type="text/css">
+      table.collapse {
+        border-collapse: collapse;
+        width: 20%;
+        caption-side: top;
+      }
+      table.separate{
+        border-collapse: separate;
+        width: 20%;
+        caption-side: bottom;
+      }
+       table,td,th{
+        border: 1px solid red;
+        border-spacing: 5px;
+        border-spacing: show;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <table class="collapse">
+    <caption>分类</caption>
+      <tr>
+        <th>茶</th>
+        <th>饮料</th>
+        <th>牛奶</th>
+      </tr>
+      <tr>
+        <td>红茶</td>
+        <td>脉动</td>
+        <td>伊利</td>
+      </tr>
+      <tr>
+        <td>红茶</td>
+        <td>脉动</td>
+        <td>伊利</td>
+      </tr>
+      <tr>
+        <td>红茶</td>
+        <td>脉动</td>
+        <td>伊利</td>
+      </tr>
+      <tr>
+        <td>红茶</td>
+        <td>脉动</td>
+      </tr>
+    </table>
+    <br />
+    <table class="separate">
+    <caption>分类</caption>
+      <tr>
+        <th>茶</th>
+        <th>饮料</th>
+        <th>牛奶</th>
+      </tr>
+      <tr>
+        <td>红茶</td>
+        <td>脉动</td>
+        <td>伊利</td>
+      </tr>
+      <tr>
+        <td>红茶</td>
+        <td>脉动</td>
+        <td>伊利</td>
+      </tr>
+      <tr>
+        <td>红茶</td>
+        <td>脉动</td>
+        <td>伊利</td>
+      </tr>
+      <tr>
+        <td>红茶</td>
+        <td>脉动</td>
+      </tr>
+    </table>
+  </body>
+</html>
