@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>position特性</title>
+    <style type="text/css">
+      h2.left{
+        position: relative;
+        left: -20px;
+      }
+      h2.right{
+        position: relative;
+        left: 20px;
+      }
+      h2.pos{
+        position: absolute;
+        left: 100px;
+        top: 150px;
+      }
+      h2.fixed{
+        position: fixed;
+        right: 100px;
+        bottom: 150px;
+      }
+      p.one{
+        z-index: -1;
+        width: 200px;
+        background-color: red;
+        padding:5px;
+        border: solid 2px;
+      }
+      p.two{
+        z-index: 2;
+        position: absolute;
+        left: 20px;top: 0px;
+        border: solid 2px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>这是位于正常位置的标题</h2>
+    <h2 class="left">这个标题相对于正常位置向左移动20px</h2>
+    <h2 class="right">这个标题相对于正常位置向右移动20px</h2>
+    <h2 class="pos">这是带有绝对定位的标题</h2>
+    <h2 class="fixed">位置从固定点开始计算</h2>
+    <p class="one">here is paragraph one this will be at the top of page</p>
+    <p class="two">here is paragraph two this will be at the top of page</p>
+  </body>
+</html>
